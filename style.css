@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  cursor: default;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+main {
+  background-image: url("imgs/vecteezy_abstract-background-design-background-texture-design-with_18752867.jpg");
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    45deg,
+    rgb(255, 217, 0) 5%,
+    orange 20%,
+    rgb(244, 44, 77) 50%,
+    purple 70%,
+    rgb(83, 83, 255) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phoneFrame {
+  height: 640px;
+  width: 320px;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 40px;
+  position: relative;
+}
+
+.statusBar {
+  margin: 10px 20px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border-bottom: 1px solid black; */
+}
+.time {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.secondSec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  margin: 0 10px;
+  font-weight: bold;
+}
+.instaLogo {
+  height: 40px;
+  width: 120px;
+}
+.instaLogo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.secondSecIcons {
+  display: flex;
+  gap: 10px;
+}
+
+
+
+
+
+/* story Section */
+.storySection {
+  height: 90px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  /* background-color: pink; */
+  padding: 10px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  align-items: center;
+  scroll-behavior:smooth;
+}
+.storySection::-webkit-scrollbar{
+    display: none;
+}
+
+.story{
+    width: 55px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 5px;
+}
+.story img{
+    border-radius: 100%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 55px;
+    width: 55px;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 2px rgb(255, 51, 0) solid;
+    padding: 2px;
+}
+
+.story .name{
+    font-size: 11px;
+    margin-top: -5px;
+    padding: 0 5px;
+}
+
+
+
+
+
+
+
+
+
+.navigationBar {
+  position: absolute;
+  bottom: 30px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  justify-content: space-between;
+  border-top: 1px solid #dadada;
+  background-color: white;
+  z-index: 10;
+}
+.navigationBar img {
+  height: 25px;
+}
+.homeBtn {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  z-index: 10;
+}
+.homebtnBar {
+  height: 5px;
+  width: 40%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+/* insta feed */
+.instaFeed {
+  /* background-color: green; */
+  height: 404px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.instaFeed::-webkit-scrollbar {
+  display: none;
+}
+
+/* post head */
+
+.postHead {
+  width: 100%;
+  height: 45px;
+  /* background-color: pink; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.postHead i{
+    font-weight: bold;
+}
+.dpName {
+  display: flex;
+  gap: 5px;
+}
+.userDpOnPost {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.userDpOnPost img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+.usernameOnPost {
+  line-height: 30px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* post img */
+.postImg {
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+}
+.postImg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* post Like Panel */
+.postLikePanel {
+  height: 40px;
+  font-size: 24px;
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+.likeCommentBtns {
+  display: flex;
+  gap: 15px;
+}
+
+/* like count */
+.likeCount {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 0 10px;
+}
+
+
+
+.caption {
+  display: flex;
+  font-size: 13px;
+  padding: 0 10px;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.caption .username {
+  font-weight: 600;
+}
+.storyWindow{
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+    position: absolute;
+    display: none;
+    background-position: center;
+    background-size: cover;
+    padding: 0 10px;
+}
+.timeLine{
+    height: 3px;
+    width: 0px;
+    background-color: black;
+    margin-top: 40px;
+    transition: all 5s linear;
+}  
