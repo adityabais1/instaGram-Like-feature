@@ -144,7 +144,6 @@ storySection.addEventListener("click", function(dets){
     console.log(storyData[dets.target.id].story);
     storyWindow.style.display = "block"
     storyWindow.style.backgroundImage = `url(${storyData[dets.target.id].story})`;
-    timeLine.style.width = "300px";
 setTimeout(function(){
     storyWindow.style.display = "none";
 },2000)

@@ -262,10 +262,3 @@ main {
     background-size: cover;
     padding: 0 10px;
 }
-.timeLine{
-    height: 3px;
-    width: 0px;
-    background-color: black;
-    margin-top: 40px;
-    transition: all 5s linear;
-}  
