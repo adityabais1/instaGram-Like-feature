@@ -56,11 +56,12 @@ postContent.forEach(function (elem) {
         <i class="ri-more-line"></i>
     </div>
     <div class="postImg">
-        <img src="${elem.pic}" alt="">
+        <img src="${elem.pic}" alt="" class="image">
+        <i class="ri-heart-3-fill heart"></i>
     </div>
     <div class="postLikePanel">
         <div class="likeCommentBtns">
-            <i class="ri-heart-3-line"></i>
+            <i class="ri-heart-3-line likeBtn"></i>
             <i class="ri-chat-3-line"></i>
             <i class="ri-send-plane-fill"></i>
         </div>
@@ -147,4 +148,29 @@ storySection.addEventListener("click", function(dets){
 setTimeout(function(){
     storyWindow.style.display = "none";
 },2000)
+});
+
+
+
+
+
+// CODE FOR LIKE BUTTON ON POST
+
+let heart = document.querySelectorAll(".heart");
+let image = document.querySelectorAll(".image");
+let randomValueGen = Math.floor(Math.random()*81 - 40);
+
+
+
+image.forEach(function(elem1, indx){
+  elem1.addEventListener("dblclick", function(){
+    heart.forEach(function () {
+      heart[indx].style.transform = `translate(-50%, -50%) scale(1) rotate(${Math.floor(Math.random()*41 - 20)}deg)`;
+      
+        setTimeout(function(){
+        heart[indx].style.transform = "translate(-50%, -50%) scale(0) rotate(0deg)";
+        
+      }, 1000)
+    })
+  })
 });
