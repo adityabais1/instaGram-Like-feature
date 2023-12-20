@@ -1,45 +1,53 @@
+
 let postContent = [
   {
     userName: "heaven.on.milli",
     dp: "https://images.unsplash.com/photo-1699434301274-101d0c5f1807?q=80&w=1917&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     pic: "https://images.unsplash.com/photo-1702318429376-968e7a347064?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     caption: "Perfect click",
+    likeCount: Math.floor(Math.random()*265)
   },
   {
     userName: "cool.boymukesh12",
     dp: "https://images.unsplash.com/photo-1577375688665-ce3600b36b64?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     pic: "https://images.unsplash.com/photo-1486621312635-4f73b739befc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     caption: "Good Morning Guys",
+    likeCount: Math.floor(Math.random()*265)
   },
   {
     userName: "badassPanjak",
     dp: "https://images.unsplash.com/photo-1563241507-5b1b6eb891b0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     pic: "https://plus.unsplash.com/premium_photo-1663100635626-7590fb7ec152?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     caption: "Good Morning Guys",
+    likeCount: Math.floor(Math.random()*265)
   },
   {
     userName: "munnaMichel",
     dp: "https://images.unsplash.com/photo-1516446636564-c48e723868fc?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     pic: "https://images.unsplash.com/photo-1610413507374-f1330f70d7ff?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     caption: "Good Morning Guys",
+    likeCount: Math.floor(Math.random()*265)
   },
   {
     userName: "dadaDon",
     dp: "https://images.unsplash.com/photo-1561581918-f7f266c4ff66?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     pic: "https://images.unsplash.com/photo-1529809773508-cd894c3de760?q=80&w=1912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     caption: "Good Morning Guys",
+    likeCount: Math.floor(Math.random()*265)
   },
   {
     userName: "chapanTikle",
     dp: "https://images.unsplash.com/photo-1513956589380-bad6acb9b9d4?q=80&w=1536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     pic: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     caption: "Good Morning Guys",
+    likeCount: Math.floor(Math.random()*265)
   },
   {
     userName: "rockyHandsome",
     dp: "https://images.unsplash.com/photo-1502258097612-43e695deebad?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     pic: "https://images.unsplash.com/photo-1591300112214-232ae6415271?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     caption: "Good Morning Guys",
+    likeCount: Math.floor(Math.random()*265)
   },
 ];
 
@@ -62,6 +70,7 @@ postContent.forEach(function (elem) {
     <div class="postLikePanel">
         <div class="likeCommentBtns">
             <i class="ri-heart-3-line likeBtn"></i>
+            <i class="ri-heart-3-fill likeBtnFill"></i>
             <i class="ri-chat-3-line"></i>
             <i class="ri-send-plane-fill"></i>
         </div>
@@ -69,7 +78,7 @@ postContent.forEach(function (elem) {
             <i class="ri-bookmark-line"></i>
         </div>
     </div>
-    <div class="likeCount">256 Likes</div>
+    <div class="likeCount">${elem.likeCount} Likes</div>
     <div class="caption">
         <div class="username">${elem.userName}</div>
         <div class="text">${elem.caption}</div>
@@ -158,8 +167,8 @@ setTimeout(function(){
 
 let heart = document.querySelectorAll(".heart");
 let image = document.querySelectorAll(".image");
-let randomValueGen = Math.floor(Math.random()*81 - 40);
-
+let likeBtn = document.querySelectorAll(".likeBtn");
+let likeBtnFill = document.querySelectorAll(".likeBtnFill");
 
 
 image.forEach(function(elem1, indx){
@@ -172,5 +181,14 @@ image.forEach(function(elem1, indx){
         
       }, 1000)
     })
+
+    // like btn become red below
+    likeBtn.forEach(function(){
+      likeBtn[indx].style.display = "none";
+    })
+    likeBtnFill.forEach(function(){
+      likeBtnFill[indx].style.display = "block"
+    })
+
   })
 });

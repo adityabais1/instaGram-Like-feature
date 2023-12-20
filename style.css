@@ -223,8 +223,8 @@ main {
   left: 50%;
   font-size: 150px;
   color: rgb(249, 49, 99);
-  transform: translate(-50%, -50%) scale(0);
-  transition: all 0.2s linear;
+  transform: translate(-50%, -50%) scale(0) rotate(0deg) ;
+  transition: all 0.2s linear;  
 }
 
 
@@ -241,6 +241,10 @@ main {
 .likeCommentBtns {
   display: flex;
   gap: 15px;
+}
+.likeBtnFill{
+  color: rgb(255, 50, 50);
+  display: none;
 }
 
 /* like count */
