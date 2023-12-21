@@ -177,7 +177,7 @@ image.forEach(function(elem1, indx){
       heart[indx].style.transform = `translate(-50%, -50%) scale(1) rotate(${Math.floor(Math.random()*41 - 20)}deg)`;
       
         setTimeout(function(){
-        heart[indx].style.transform = "translate(-50%, -50%) scale(0) rotate(0deg)";
+        heart[indx].style.transform = `translate(-50%, -50%) scale(0) rotate(${Math.floor(Math.random()*41 - 20)}deg)`;
         
       }, 1000)
     })
